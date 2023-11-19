@@ -8,22 +8,22 @@ int main()
 	int space = 0;
 	int number = 0;
 	int other = 0;
-	while ((a = getchar()) && (a != 'n'))
+	while ((a = getchar()) && (a != '\n'))
 	{
-		if (a >= 97 && a <= 122 || a >= 65 && a <= 90)
-			letter + 1;
+		if (a >= 'a' && a <= 'z' || a >= 'A' && a <= 'Z')
+			letter + +;
 		else if (a >= '0' && a <= '9')
-			number + 1;
+			number + +;
 		else if (a == ' ')
-			space + 1;
+			space + +;
 		else
-			other + 1;
+			other + +;
 
 	}
-	cout << "Ó¢ÎÄ×ÖÄ¸µÄ¸öÊýÎª£º" << letter << endl;
-	cout << "Êý×ÖµÄ¸öÊýÎª£º" << number << endl;
-	cout << "¿Õ¸ñµÄ¸öÊýÎª£º" << space << endl;
-	cout << "ÆäËû×Ö·ûµÄ¸öÊýÎª£º" << other << endl;
+	cout << "è‹±æ–‡å­—æ¯çš„ä¸ªæ•°ä¸ºï¼š" << letter << endl;
+	cout << "æ•°å­—çš„ä¸ªæ•°ä¸ºï¼š" << number << endl;
+	cout << "ç©ºæ ¼çš„ä¸ªæ•°ä¸ºï¼š" << space << endl;
+	cout << "å…¶ä»–å­—ç¬¦çš„ä¸ªæ•°ä¸ºï¼š" << other << endl;
 	return 0;
 }
 */
